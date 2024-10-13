@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshit Bhardwaj - Professional Resume</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS CSS (for scroll animations) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #1E1E3F, #2C003E);
+            color: #fff;
+            /* Apply the color #E8CCEB to all text elements */
+
+    color: #E8CCEB; /* The color applied to all text */
+    font-family: 'YourPreferredFont', sans-serif; /* Set your preferred professional font */
+}
+
+/* You can also adjust colors for specific elements if needed */
+h1, h2, h3, p, a, span {
+    color: #E8CCEB;
+}
+
+        
+
+        header {
+            background-color: transparent;
+            color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 4em;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: fadeIn 1s ease;
+        }
+
+        header p {
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+
+        /* Tab Navigation */
+        .nav-tabs {
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .nav-tabs .nav-link {
+            color: #ffffff;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 50px;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-tabs .nav-link.active {
+            background-color: #5D3FD3;
+        }
+
+        .nav-tabs .nav-link:hover {
+            background-color: #4B0082;
+        }
+
+        .tab-content {
+            margin-top: 50px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .tab-pane h2 {
+            color: #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .tab-pane p,
+        .tab-pane ul {
+            color: #ffffff;
+            font-size: 1.2em;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+            margin-top: 50px;
+            border-top: 2px solid #ffffff;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Custom Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-button {
+            margin-top: 30px;
+            padding: 12px 30px;
+            font-size: 1.3em;
+            background-color: #ffffff;
+            color: #5D3FD3;
+            border: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #4B0082;
+            color: #ffffff;
+        }
+
+        /* Overview Image and Text */
+        .overview-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .overview-image {
+    width: 175px; /* Maintain original width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Slightly rounded corners for a professional look */
+    margin-right: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    border: 2px solid #ffffff; /* Add a thin, elegant border */
+}
+
+/* Name in top-left corner */
+.name-header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em; /* Reduced from 2em to 1.5em */
+    color: #E8CCEB; /* Adjusted to match the background */
+    font-weight: 700;
+    letter-spacing: 1.5px; /* Reduced slightly */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a slight shadow for emphasis */
+}
+.modal-content {
+    background: linear-gradient(135deg, #4B0082, #8A2BE2); /* Purple gradient for the entire modal */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.modal-header, .modal-footer {
+    border: none; /* Remove border */
+}
+
+.modal-body {
+    padding: 20px; /* Padding for the content */
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 1px solid #8A2BE2; /* Border color */
+    color: white; /* Text color */
+}
+
+.form-control::placeholder {
+    color: #d1d1d1; /* Placeholder text color */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Button color */
+    color: white; /* Button text color */
+}
+
+.btn-submit {
+    background-color: #8A2BE2; /* Submit button color */
+    color: white; /* Submit button text color */
+    border: none; /* Remove border */
+}
+
+.btn-submit:hover {
+    background-color: #4B0082; /* Darker purple on hover */
+}
+
+#emailError {
+    margin-top: 5px; /* Spacing for error message */
+}
+
+
+
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3em;
+            }
+
+            .tab-content {
+                padding: 20px;
+            }
+
+            .overview-image {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1 data-aos="fade-down" data-aos-duration="300">Akshit Bhardwaj</h1>
+    <p data-aos="fade-up" data-aos-duration="300">Nawanshahr, Punjab | +91 6230593730 | <a href="mailto:akshitbhardwaj315@gmail.com">akshitbhardwaj315@gmail.com</a></p>
+  </header>
+
+  <div class="name-header">
+    AKSHIT BHARDWAJ
+</div>
+
+
+  <!-- Tab Navigation -->
+  <ul class="nav nav-tabs" id="resumeTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="education-tab" data-toggle="tab" href="#education" role="tab" aria-controls="education" aria-selected="false">Education</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="experience-tab" data-toggle="tab" href="#experience" role="tab" aria-controls="experience" aria-selected="false">Experience</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="projects-tab" data-toggle="tab" href="#projects" role="tab" aria-controls="projects" aria-selected="false">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="skills-tab" data-toggle="tab" href="#skills" role="tab" aria-controls="skills" aria-selected="false">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="certifications-tab" data-toggle="tab" href="#certifications" role="tab" aria-controls="certifications" aria-selected="false">Certifications</a>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="container">
+    <div class="tab-content" id="resumeTabContent">
+      <!-- All content remains the same as before -->
+  <!-- Overview Tab -->
+  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+    <div class="overview-container">
+      <img src="bb.jpg" alt="Profile Picture" class="overview-image"> <!-- Adjust the image source -->
+      <div>
+        <h2>Personal Overview</h2>
+        <ul>
+          <li><strong>Schooling:</strong></li>
+          <ul>
+            <li>10th Grade: [RMB DAV SENIOR SECONDARY CENTENARY PUBLIC SCHOOL], Scored [88%]</li>
+            <li>12th Grade: [RMB DAV SENIOR SECONDARY CENTENARY PUBLIC SCHOOL], Scored [75%]</li>
+          </ul>
+          <li><strong>Government Exams:</strong></li>
+          <ul>
+            <li>JEE: Scored [72 percentile]</li>
+            <li>NDA: Scored [782 marks]</li>
+          </ul>
+          <li><strong>College Semester Grades:</strong></li>
+          <ul>
+            <li>1st Semester: [7.2]</li>
+            <li>2nd Semester: [6.7]</li>
+            <li>3rd Semester: [7.0]</li>
+            <li>4th Semester: [7.0]</li>
+            <li>5th Semester: [] (current semester)</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Education Tab -->
+  <div class="tab-pane fade" id="education" role="tabpanel" aria-labelledby="education-tab">
+    <h2>Education</h2>
+    <p><strong>B.Tech in Computer Science (AIML)</strong> - [DAVIET COLLEGE JALANDHAR] (2022-2026)</p>
+    <p><strong>Schooling</strong> - [RMB DAV SENIOR SECONDARY CENTERNARY PUBLIC SCHOOL], Nawanshahr, Punjab</p>
+  </div>
+
+  <!-- Experience Tab -->
+  <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+    <h2>Internship Experience</h2>
+    <p><strong>Data Science Intern</strong> - [PRODIGY INFOTECH] (OCTOBER 2024)</p>
+    <ul>
+      <li>Worked on data analysis and visualization projects using Python.</li>
+      <li>Collaborated with the team to develop machine learning models.</li>
+    </ul>
+  </div>
+
+  <!-- Projects Tab -->
+  <!-- Projects Tab -->
+<div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="projects-tab">
+<h2>Projects</h2>
+
+<!-- Project 1: Titanic Survival Prediction -->
+<p><strong>Titanic Survival Prediction</strong></p>
+<ul>
+  <li>Performed data analysis and visualizations to predict survival rates of passengers on the Titanic.</li>
+  <li>Utilized Python, Pandas, and Matplotlib for data manipulation and visualization.</li>
+  <li>Built a predictive model using Logistic Regression to determine passenger survival based on key factors like age, class, and gender.</li>
+  <li>Purpose: Developed skills in working with imbalanced datasets and binary classification problems.</li>
+</ul>
+
+<!-- Project 2: Customer Churn Prediction -->
+<p><strong>Customer Churn Prediction</strong></p>
+<ul>
+  <li>Developed a machine learning model to predict customer churn for a telecom company.</li>
+  <li>Cleaned and processed the dataset using Pandas and NumPy, including handling missing values and encoding categorical data.</li>
+  <li>Implemented decision tree, random forest, and support vector machine (SVM) algorithms, achieving over 80% accuracy in predictions.</li>
+  <li>Purpose: Helped the company identify customers at risk of leaving, allowing targeted retention strategies and minimizing revenue loss.</li>
+</ul>
+
+<!-- Project 3: Sales Forecasting using Time Series Analysis -->
+<p><strong>Sales Forecasting using Time Series Analysis</strong></p>
+<ul>
+  <li>Analyzed historical sales data from a retail company and created a time series forecasting model.</li>
+  <li>Applied statistical techniques like ARIMA and Prophet models for future sales prediction.</li>
+  <li>Created interactive dashboards using Matplotlib and Seaborn to visualize trends and seasonality in sales data.</li>
+  <li>Purpose: Assisted in inventory management and demand planning by predicting future sales trends with improved accuracy.</li>
+</ul>
+
+<!-- Project 4: Movie Recommendation System -->
+<p><strong>Movie Recommendation System</strong></p>
+<ul>
+  <li>Designed and implemented a content-based movie recommendation system using Natural Language Processing (NLP).</li>
+  <li>Preprocessed movie plot data, tokenized text using TF-IDF vectorization, and applied cosine similarity to recommend similar movies.</li>
+  <li>Purpose: Provided personalized movie suggestions based on user preferences, demonstrating the ability to handle large datasets and apply NLP techniques.</li>
+</ul>
+
+<!-- Project 5: Sentiment Analysis of Product Reviews -->
+<p><strong>Sentiment Analysis of Product Reviews</strong></p>
+<ul>
+  <li>Scraped product review data from e-commerce websites and performed sentiment analysis to determine customer satisfaction.</li>
+  <li>Preprocessed textual data using tokenization, stop-word removal, and stemming techniques with NLTK.</li>
+  <li>Trained a Naive Bayes classifier and achieved high accuracy in predicting positive, negative, or neutral sentiment.</li>
+  <li>Purpose: Provided insights into customer feedback, helping businesses enhance product quality and customer experience.</li>
+</ul>
+</div>
+
+
+  <!-- Skills Tab -->
+  <div class="tab-pane fade" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming Languages: C/C++,Python, R, JavaScript</li>
+      <li>Data Science: Pandas, NumPy, Scikit-learn,Matplotlib,Seaborn</li>
+      <li>Web Development: HTML, CSS, JavaScript, react/react-native</li>
+    </ul>
+  </div>
+
+  <!-- Certifications Tab -->
+  <div class="tab-pane fade" id="certifications" role="tabpanel" aria-labelledby="certifications-tab">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Data Science and Machine Learning with Generative AI - [PHYSICS WALLAH]</li>
+      <li>Full Stack Web Development -[Education solution -JALANDHAR]</li>
+      <li>Android Development -[Xpediolive]</li>
+      
+    </ul>
+  </div>
+</div>
+</div>
+<!-- contact -->
+<div class="text-center">
+<button class="contact-button" data-toggle="modal" data-target="#contactModal">Contact Me</button>
+</div>
+
+<!-- Contact Us Modal -->
+...
+<!-- Contact Us Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span>&times;</span>
+              </button>
+          </div>
+          <div class="modal-body">
+              <form id="contactForm">
+                  <div class="form-group">
+                      <label for="fullName">Full Name</label>
+                      <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">E-mail</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                      <div id="emailError" style="display: none; color: red;">Please enter a valid email address.</div>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+                  </div>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-submit" id="sendMessageButton">Send Message</button>
+          </div>
+      </div>
+  </div>
+</div>
+...
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    document.getElementById('sendMessageButton').addEventListener('click', function() {
+        const email = document.getElementById('email').value;
+        const emailError = document.getElementById('emailError');
+
+        if (!validateEmail(email)) {
+            emailError.style.display = 'block';
+        } else {
+            emailError.style.display = 'none';
+            alert('Message sent successfully!'); // Add actual submission logic here
+            $('#contactModal').modal('hide');
+        }
+    });
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+</script>
