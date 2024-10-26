@@ -16,153 +16,144 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-
-  <!-- Custom CSS -->
+<!-- Custom CSS -->
   <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(135deg, #1E1E3F, #2C003E);
-            color: #fff;
-            /* Apply the color #E8CCEB to all text elements */
-
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #1E1E3F, #2C003E);
     color: #E8CCEB; /* The color applied to all text */
-    font-family: 'YourPreferredFont', sans-serif; /* Set your preferred professional font */
 }
 
-/* You can also adjust colors for specific elements if needed */
 h1, h2, h3, p, a, span {
     color: #E8CCEB;
 }
 
-        
+header {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
 
-        header {
-            background-color: transparent;
-            color: #ffffff;
-            padding: 60px 0;
-            text-align: center;
-        }
+header h1 {
+    font-size: 4em;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: fadeIn 1s ease;
+}
 
-        header h1 {
-            font-size: 4em;
-            letter-spacing: 3px;
-            margin-bottom: 20px;
-            font-weight: bold;
-            animation: fadeIn 1s ease;
-        }
+header p {
+    font-size: 1.5em;
+    color: #ffffff;
+}
 
-        header p {
-            font-size: 1.5em;
-            color: #ffffff;
-        }
+/* Tab Navigation */
+.nav-tabs {
+    justify-content: center;
+    margin-top: 30px;
+}
 
-        /* Tab Navigation */
-        .nav-tabs {
-            justify-content: center;
-            margin-top: 30px;
-        }
+.nav-tabs .nav-link {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
 
-        .nav-tabs .nav-link {
-            color: #ffffff;
-            font-weight: bold;
-            background-color: rgba(0, 0, 0, 0.2);
-            border-radius: 50px;
-            margin: 0 10px;
-            transition: background-color 0.3s ease;
-        }
+.nav-tabs .nav-link.active {
+    background-color: #5D3FD3;
+}
 
-        .nav-tabs .nav-link.active {
-            background-color: #5D3FD3;
-        }
+.nav-tabs .nav-link:hover {
+    background-color: #4B0082;
+}
 
-        .nav-tabs .nav-link:hover {
-            background-color: #4B0082;
-        }
+.tab-content {
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
 
-        .tab-content {
-            margin-top: 50px;
-            background-color: rgba(255, 255, 255, 0.1);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
-        }
+.tab-pane h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
 
-        .tab-pane h2 {
-            color: #ffffff;
-            margin-bottom: 25px;
-        }
+.tab-pane p,
+.tab-pane ul {
+    color: #ffffff;
+    font-size: 1.2em;
+}
 
-        .tab-pane p,
-        .tab-pane ul {
-            color: #ffffff;
-            font-size: 1.2em;
-        }
+ul li {
+    margin-bottom: 10px;
+}
 
-        ul li {
-            margin-bottom: 10px;
-        }
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    margin-top: 50px;
+    border-top: 2px solid #ffffff;
+}
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #ffffff;
-            margin-top: 50px;
-            border-top: 2px solid #ffffff;
-        }
+a {
+    color: #fff;
+    text-decoration: none;
+}
 
-        a {
-            color: #fff;
-            text-decoration: none;
-        }
+a:hover {
+    text-decoration: underline;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+/* Custom Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        /* Custom Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-50px);
-            }
+.contact-button {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.3em;
+    background-color: #ffffff;
+    color: #5D3FD3;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
 
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.contact-button:hover {
+    background-color: #4B0082;
+    color: #ffffff;
+}
 
-        .contact-button {
-            margin-top: 30px;
-            padding: 12px 30px;
-            font-size: 1.3em;
-            background-color: #ffffff;
-            color: #5D3FD3;
-            border: none;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-        }
+/* Overview Image and Text */
+.overview-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 
-        .contact-button:hover {
-            background-color: #4B0082;
-            color: #ffffff;
-        }
-
-        /* Overview Image and Text */
-        .overview-container {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        .overview-image {
+.overview-image {
     width: 175px; /* Maintain original width */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Slightly rounded corners for a professional look */
+    border-radius: 10px;
     margin-right: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
-    border: 2px solid #ffffff; /* Add a thin, elegant border */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffffff;
 }
 
 /* Name in top-left corner */
@@ -171,123 +162,137 @@ h1, h2, h3, p, a, span {
     top: 20px;
     left: 20px;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em; /* Reduced from 2em to 1.5em */
-    color: #E8CCEB; /* Adjusted to match the background */
+    font-size: 1.5em;
+    color: #E8CCEB;
     font-weight: 700;
-    letter-spacing: 1.5px; /* Reduced slightly */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Adds a slight shadow for emphasis */
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
 .modal-content {
-    background: linear-gradient(135deg, #4B0082, #8A2BE2); /* Purple gradient for the entire modal */
-    color: white; /* Text color */
-    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(135deg, #4B0082, #8A2BE2);
+    color: white;
+    border-radius: 10px;
 }
 
 .modal-header, .modal-footer {
-    border: none; /* Remove border */
+    border: none;
 }
 
 .modal-body {
-    padding: 20px; /* Padding for the content */
+    padding: 20px;
 }
 
 .form-control {
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    border: 1px solid #8A2BE2; /* Border color */
-    color: white; /* Text color */
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #8A2BE2;
+    color: white;
 }
 
 .form-control::placeholder {
-    color: #d1d1d1; /* Placeholder text color */
+    color: #d1d1d1;
 }
 
 .btn-secondary {
-    background-color: #6c757d; /* Button color */
-    color: white; /* Button text color */
+    background-color: #6c757d;
+    color: white;
 }
 
 .btn-submit {
-    background-color: #8A2BE2; /* Submit button color */
-    color: white; /* Submit button text color */
-    border: none; /* Remove border */
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
 }
 
 .btn-submit:hover {
-    background-color: #4B0082; /* Darker purple on hover */
+    background-color: #4B0082;
 }
 
 #emailError {
-    margin-top: 5px; /* Spacing for error message */
+    margin-top: 5px;
 }
 
-
+/* Social Media Buttons and Tooltips */
 .social-media-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Adjust spacing as needed */
+    margin-top: 20px;
 }
 
 .social-icon {
     position: relative;
-    margin: 0 15px; /* Adjust spacing between icons */
-    font-size: 30px; /* Adjust icon size as needed */
-    color: #ffffff; /* Icon color */
-    transition: transform 0.3s; /* Smooth transition */
+    margin: 0 15px;
+    font-size: 30px;
+    color: #ffffff;
+    transition: transform 0.3s;
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge on hover */
+    transform: scale(1.1);
 }
 
+/* Tooltip Styling for Each Social Media Platform */
 .tooltip {
     position: absolute;
-    bottom: 100%; /* Position above the icon */
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #333; /* Tooltip background color */
-    color: #fff; /* Tooltip text color */
+    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     white-space: nowrap;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, visibility 0.3s;
-    font-size: 14px; /* Tooltip font size */
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .social-icon:hover .tooltip {
-    opacity: 1; /* Show tooltip on hover */
+    opacity: 1;
     visibility: visible;
 }
 
+/* Platform-Specific Tooltip Styles */
+.github-tooltip {
+    background-color: #333333;
+}
+
+.facebook-tooltip {
+    background-color: #3b5998;
+}
+
+.instagram-tooltip {
+    background: radial-gradient(circle at 30% 30%, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.linkedin-tooltip {
+    background-color: #0077b5;
+}
+
+/* Icon Color Transition on Hover */
 .social-icon i {
-    transition: color 0.3s; /* Smooth color transition */
+    transition: color 0.3s;
 }
 
 .social-icon:hover i {
-    color: #d4a373; /* Change icon color on hover (or use theme color) */
+    color: #d4a373;
 }
 
-
-
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 3em;
-            }
-
-            .tab-content {
-                padding: 20px;
-            }
-
-            .overview-image {
-                width: 120px;
-            }
-        }
-    </style>
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+    .tab-content {
+        padding: 20px;
+    }
+    .overview-image {
+        width: 120px;
+    }
+}
+     </style>
 </head>
-
 <body>
 
   <!-- Header Section -->
@@ -456,19 +461,19 @@ h1, h2, h3, p, a, span {
         <div class="social-media-buttons">
             <a href="https://github.com" class="social-icon" id="github" target="_blank">
                 <i class="fab fa-github"></i>
-                <span class="tooltip">GitHub</span>
+                <span class="tooltip github-tooltip">GitHub</span>
             </a>
             <a href="https://facebook.com" class="social-icon" id="facebook" target="_blank">
                 <i class="fab fa-facebook-f"></i>
-                <span class="tooltip">Facebook</span>
+                <span class="tooltip facebook-tooltip">Facebook</span>
             </a>
             <a href="https://instagram.com" class="social-icon" id="instagram" target="_blank">
                 <i class="fab fa-instagram"></i>
-                <span class="tooltip">Instagram</span>
+                <span class="tooltip instagram-tooltip">Instagram</span>
             </a>
             <a href="https://linkedin.com" class="social-icon" id="linkedin" target="_blank">
                 <i class="fab fa-linkedin-in"></i>
-                <span class="tooltip">LinkedIn</span>
+                <span class="tooltip linkedin-tooltip">LinkedIn</span>
             </a>
         </div>
     </div>
